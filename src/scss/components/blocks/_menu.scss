@@ -1,0 +1,34 @@
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__item-link {
+    position: relative;
+    padding: 16px 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--text-color);
+
+    &::after {
+      @include pseudo;
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--accent-color);
+      opacity: 0;
+      transition: opacity var(--ui-transition) ease;
+    }
+
+    @include hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

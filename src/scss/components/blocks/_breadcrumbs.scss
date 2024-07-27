@@ -1,0 +1,12 @@
+.breadcrumbs {
+  display: flex;
+  padding: 39px 0;
+  gap: 6px;
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--text-color);
+  }
+}

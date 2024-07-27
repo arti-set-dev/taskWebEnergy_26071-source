@@ -1,0 +1,54 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  &__item {
+    border: 1px solid #cacccf;
+    border-radius: 2px;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: normal;
+    color: #52575c;
+    transition: background-color var(--ui-transition) ease,
+    color var(--ui-transition) ease, border-color var(--ui-transition) ease;
+
+    &:nth-child(11) ~ &:not(.tags__item--btn) {
+      display: none;
+    }
+
+    @include mobile {
+      &:nth-child(3) ~ &:not(.tags__item--btn) {
+        display: none;
+      }
+    }
+
+    @include hover {
+      border-color: var(--accent-color);
+      color: var(--light-color);
+      background-color: var(--accent-color);
+    }
+
+    &--btn {
+      border-color: var(--accent-color);
+
+      @include hover {
+        color: var(--accent-color);
+        background-color: transparent;
+      }
+    }
+  }
+
+  &--show {
+    .tags__item:nth-child(11) ~ .tags__item:not(.tags__item--btn) {
+      display: block;
+    }
+
+    @include mobile {
+      .tags__item:nth-child(3) ~ .tags__item:not(.tags__item--btn) {
+        display: block;
+      }
+    }
+  }
+}

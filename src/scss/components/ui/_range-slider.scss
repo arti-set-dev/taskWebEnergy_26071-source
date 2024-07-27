@@ -1,0 +1,37 @@
+.noUi-handle {
+  border-radius: 50%;
+  box-shadow: 0 0 6px 0 rgb(37 40 43 / 45%);
+  background-color: #fff;
+  cursor: pointer;
+
+  &::before, &::after {
+    display: none;
+  }
+}
+
+.noUi-target {
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #cacccf;
+}
+
+.noUi-horizontal {
+  border: none;
+  height: 4px;
+}
+
+.noUi-connect {
+  background-color: #ff6262;
+}
+
+.noUi-horizontal .noUi-handle {
+  right: -20px;
+  top: -9px;
+  border: 4px solid #ff6262;
+  width: 20px;
+  height: 20px;
+
+  &.noUi-handle-upper {
+    right: 0;
+  }
+}

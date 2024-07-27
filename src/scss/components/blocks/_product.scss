@@ -1,0 +1,103 @@
+.product {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+  transition: box-shadow var(--ui-transition) ease;
+
+  @include hover {
+    z-index: 1;
+    box-shadow: 0 0 20px 0 rgba(37, 40, 43, 0.2);
+  }
+
+  &__picture {
+    display: block;
+    padding: 20px;
+  }
+
+  &__content {
+    padding: 20px;
+  }
+
+  &__code {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #a0a4a8;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 14px;
+
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      color: #25282b;
+    }
+  }
+
+  &__price-wholesale {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #1a8bff;
+  }
+
+  &__price-retail {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--accent-color);
+  }
+
+  &__order {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__btn-order {
+    flex-basis: 78%;
+    border: 1px solid #a0a4a8;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+    color: #52575c;
+    transition: border-color var(--ui-transition) ease, color var(--ui-transition) ease, background-color var(--ui-transition) ease;
+
+    @include hover {
+      border-color: var(--accent-color);
+      color: var(--light-color);
+      background-color: var(--accent-color);
+
+      svg {
+        stroke: var(--light-color);
+      }
+    }
+
+    &--favorite {
+      flex-basis: 23%;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: transparent;
+      stroke: #a0a4a8;
+      transition: stroke var(--ui-transition) ease;
+    }
+
+    &--is-favorite {
+      border: 1px solid var(--accent-color);
+
+      svg {
+        stroke: var(--accent-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+// ui
+@import "./components/ui/logo";
+@import "./components/ui/field";
+@import "./components/ui/btn-search";
+@import "./components/ui/btn-accent";
+@import "./components/ui/select";
+@import "./components/ui/range-slider";
+@import "./components/ui/checkbox";
+@import "./components/ui/btn-outline";
+@import "./components/ui/btn-filter";
+
+// blocks
+@import "./components/blocks/social";
+@import "./components/blocks/menu";
+@import "./components/blocks/breadcrumbs";
+@import "./components/blocks/tags";
+@import "./components/blocks/filter";
+@import "./components/blocks/accordion";
+@import "./components/blocks/product";
+@import "./components/blocks/pagination";
+@import "./components/blocks/stepper";
+@import "./components/blocks/table-size";
+@import "./components/blocks/modal-filter";
+
+// секции
+@import "./components/header";
+@import "./components/products";
+@import "./components/footer";

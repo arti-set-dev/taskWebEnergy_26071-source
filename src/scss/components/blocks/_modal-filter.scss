@@ -1,0 +1,49 @@
+.modal-filter {
+  position: static;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  padding: 12px 18px 32px;
+  height: fit-content;
+  max-width: 268px;
+  background-color: var(--light-color);
+  transform: initial;
+
+  &__back {
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #25282b;
+
+    @include bg-contain;
+
+    background-image: url("../img/svg/right.svg");
+    background-position: left;
+    background-size: 24px;
+  }
+
+  &.show {
+    transform: translateX(-20px);
+
+    .modal-filter__btn {
+      transform: translate(20px, -100%);
+    }
+  }
+
+  &.active {
+    transform: translateX(0);
+
+    .modal-filter__btn {
+      transform: translate(0, 0);
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: -52px;
+    top: 0;
+    padding: 14px;
+    transition: transform var(--modal-time) ease;
+  }
+}

@@ -1,0 +1,8 @@
+.btn-search {
+  width: 20px;
+  height: 20px;
+
+  @include bg-contain;
+
+  background-image: url("../img/svg/search.svg");
+}

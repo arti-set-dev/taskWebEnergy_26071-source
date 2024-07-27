@@ -1,0 +1,35 @@
+.accordion-list {
+  width: 100%;
+}
+
+.accordion-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: left;
+  color: #25282b;
+  transform: scaleY(1);
+  gap: 15px;
+
+  &.active {
+    background-color: transparent;
+
+    &::after {
+      transform: scaleY(-1);
+    }
+  }
+
+  &::after {
+    @include pseudo;
+
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/svg/down.svg");
+    transition: transform var(--accordion-time) ease;
+
+    @include bg-contain;
+  }
+}

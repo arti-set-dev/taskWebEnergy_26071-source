@@ -1,0 +1,76 @@
+<header class="header">
+  <div class="header__top">
+    <div class="container header__top-container">
+      <a href="#" rel="nofollow" class="logo header__logo" style="background-image: url(img/logo.webp);"></a>
+      <div class="header__location">
+        <div class="header__location-desc">Выберите ваш город:</div>
+        <button class="btn-reset header__location-btn" type="button">Санкт-Петербург</button>
+      </div>
+      <form class="header__search" action="/" method="post">
+        <input class="input-reset field header__search-field" type="search" aria-label="Поле для поиска">
+        <button class="btn-reset btn-search header__search-btn" type="submit" aria-label="Поиск"></button>
+      </form>
+      <div class="header__schedule">
+        <div class="header__schedule-text">Режим работы</div>
+        <div class="header__schedule-text">Пн-Пт с 8:00 — 18:00</div>
+      </div>
+      <ul class="list-reset header__social social">
+        <li class="social__item"><a href="#" target="_blank" rel="nofollow" aria-label="Наша страница в facebook"
+            style="background-image:url(img/svg/fb.svg);"></a></li>
+        <li class="social__item"><a href="#" target="_blank" rel="nofollow" aria-label="Наша страница в instagram"
+            style="background-image:url(img/svg/inst.svg);"></a></li>
+        <li class="social__item"><a href="#" target="_blank" rel="nofollow" aria-label="Наша страница в VK"
+            style="background-image:url(img/svg/VK.svg);"></a></li>
+      </ul>
+      <div class="header__callback">
+        <div class="header__callback-item">
+          <div class="header__callback-city">г. Москва</div><a class="header__callback-phone" href="tel:+74957772345">+7
+            (495) 777-2345</a><a class="header__callback-link" href="#">Заказать звонок</a>
+        </div>
+        <div class="header__callback-item">
+          <div class="header__callback-city">г. Ногинск</div><a class="header__callback-phone"
+            href="tel:+74957772345">+7 (495) 600-4400</a><a class="header__callback-link" href="#">Заказать звонок</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container header__bottom-container">
+      <button class="btn-reset btn-accent header__catalog-btn" type="button" data-dynamic-state="header__top-container, 1200, first">
+        <svg>
+          <use xlink:href="img/sprite.svg#menu"></use>
+        </svg>
+        Каталог
+      </button>
+      <nav class="header__menu menu">
+        <ul class="list-reset menu__list">
+          <li class="menu__item"><a class="menu__item-link" href="#">Новости</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">О компании</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">Скидки</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">Доставка и оплата</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">Услуги</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">Дилеры</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">Магазины</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">Контакты</a></li>
+        </ul>
+      </nav><a class="header__honest-sign honest-sign" href="#" target="_blank" rel="nofollw">Честный знак</a>
+      <ul class="list-reset header__logout" data-dynamic-state="header__top-container, 1200, last">
+        <li class="header__logout-item">
+          <a href="#" aria-label="Перейти на страницу избранное" style="background-image: url(img/svg/favorite.svg);">
+            <div class="header__logout-count">0</div>
+          </a>
+        </li>
+        <li class="header__logout-item">
+          <a href="#" aria-label="Перейти на страницу корзины" style="background-image: url(img/svg/cart.svg);">
+            <div class="header__logout-count">0</div>
+          </a>
+        </li>
+        <li class="header__logout-item header__logout-item--login">
+          <a href="#" aria-label="Перейти личный кабинет" style="background-image: url(img/svg/user.svg);">
+            Войти
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

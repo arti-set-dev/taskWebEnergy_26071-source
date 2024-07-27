@@ -1,0 +1,17 @@
+.btn-filter {
+  @include bg-contain;
+
+  display: none;
+  padding-left: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #25282b;
+  background-image: url("../img/svg/filter.svg");
+  background-position: left;
+  background-size: 24px;
+
+  @include small-tablet {
+    display: block;
+  }
+}

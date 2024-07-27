@@ -1,0 +1,17 @@
+.btn-accent {
+  display: flex;
+  align-items: center;
+  padding: 12px 21px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--light-color);
+  background-color: #eb4747;
+  gap: 8px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--light-color);
+  }
+}

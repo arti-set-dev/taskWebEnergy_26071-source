@@ -1,0 +1,21 @@
+.checkbox {
+  border: 1px solid #cacccf;
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/svg/check.svg");
+  background-color: var(--light-color);
+  transition: background-color var(--ui-transition) ease, background-image var(--ui-transition) ease,
+  border-color var(--ui-transition) ease;
+  cursor: pointer;
+
+  @include bg-contain;
+
+  /* stylelint-disable-next-line order/properties-order */
+  background-size: 13px;
+
+  &:checked {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+  }
+}
